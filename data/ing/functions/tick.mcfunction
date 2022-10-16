@@ -1,0 +1,9 @@
+execute if score ing_Template ing_Core.isActive matches 1 run function #ing_template:tick
+execute if score ing_Math ing_Core.isActive matches 1 run function #ing_math:tick
+execute if score ing_UserData ing_Core.isActive matches 1 run function #ing_userdata:tick
+execute if score ing_Location ing_Core.isActive matches 1 run function #ing_location:tick
+execute if score ing_Deathpoint ing_Core.isActive matches 1 run function #ing_deathpoint:tick
+execute if score ing_DayCount ing_Core.isActive matches 1 run function #ing_daycount:tick
+execute if score ing_EndCrystal ing_Core.isActive matches 1 run function #ing_endcrystal:tick
+execute if score ing_TNT ing_Core.isActive matches 1 run function #ing_tnt:tick
+execute if score ing_Advancement ing_Core.isActive matches 1 run function #ing_advancement:tick

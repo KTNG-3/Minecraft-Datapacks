@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "wool",
+    "ingredients": [
+        {
+            "item": "minecraft:pink_carpet"
+        },
+        {
+            "item": "minecraft:pink_carpet"
+        },
+        {
+            "item": "minecraft:pink_carpet"
+        }
+    ],
+    "result": {
+        "item": "minecraft:pink_wool",
+        "count": 2
+    }
+}

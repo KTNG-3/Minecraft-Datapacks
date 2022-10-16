@@ -1,0 +1,32 @@
+{
+    "display": {
+        "title": {
+            "text": "warm"
+        },
+        "description": {
+            "text": "New Frog variant on a Lead"
+        },
+        "icon": {
+            "item": "minecraft:pearlescent_froglight"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Lead": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:lead"
+                },
+                "entity": {
+                    "type": "minecraft:frog",
+                    "nbt": "{variant: 'minecraft:warm'}"
+                }
+            }
+        }
+    },
+    "parent": "ing:wts/root"
+}

@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "text": "poisonous_potato"
+        },
+        "description": {
+            "text": "Eatting New Food"
+        },
+        "icon": {
+            "item": "minecraft:poisonous_potato"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Items": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:poisonous_potato"
+                    ]
+                }
+            }
+        },
+        "Eat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:poisonous_potato"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "ing:bd/root"
+}

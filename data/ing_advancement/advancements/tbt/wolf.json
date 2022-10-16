@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "wolf"
+        },
+        "description": {
+            "text": "Breeding New Animal"
+        },
+        "icon": {
+            "item": "minecraft:bone"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Animal": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "minecraft:wolf"
+                }
+            }
+        }
+    },
+    "parent": "ing:tbt/root"
+}

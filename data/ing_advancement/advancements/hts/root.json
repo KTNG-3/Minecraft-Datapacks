@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Hot Tourist Destinations"
+        },
+        "description": {
+            "text": "Get All 5 Biome To Get Hot Tourist Destinations"
+        },
+        "icon": {
+            "item": "minecraft:netherite_boots"
+        },
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "parent": "ing:advancement_help"
+}

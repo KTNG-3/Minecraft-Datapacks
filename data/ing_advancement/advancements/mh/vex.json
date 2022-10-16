@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "vex"
+        },
+        "description": {
+            "text": "Killing New Monster"
+        },
+        "icon": {
+            "item": "minecraft:iron_sword"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Monster": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:vex"
+                }
+            }
+        }
+    },
+    "parent": "ing:mh/root"
+}

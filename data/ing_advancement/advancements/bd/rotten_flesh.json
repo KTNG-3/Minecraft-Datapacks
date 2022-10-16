@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "text": "rotten_flesh"
+        },
+        "description": {
+            "text": "Eatting New Food"
+        },
+        "icon": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Items": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:rotten_flesh"
+                    ]
+                }
+            }
+        },
+        "Eat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:rotten_flesh"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "ing:bd/root"
+}

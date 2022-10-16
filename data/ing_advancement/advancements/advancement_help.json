@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Advancement Helper"
+        },
+        "description": {
+            "text": "Help To Getting Advancement"
+        },
+        "icon": {
+            "item": "minecraft:podzol"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "parent": "ing:root"
+}

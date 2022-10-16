@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "frozen_peaks"
+        },
+        "description": {
+            "text": "Getting New Biome"
+        },
+        "icon": {
+            "item": "minecraft:packed_ice"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "biome": "minecraft:frozen_peaks",
+                        "dimension": "minecraft:overworld"
+                    }
+                }
+            }
+        }
+    },
+    "parent": "ing:adt_time/root"
+}

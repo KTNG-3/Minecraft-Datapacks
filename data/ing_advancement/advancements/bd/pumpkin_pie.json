@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "text": "pumpkin_pie"
+        },
+        "description": {
+            "text": "Eatting New Food"
+        },
+        "icon": {
+            "item": "minecraft:pumpkin_pie"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Items": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:pumpkin_pie"
+                    ]
+                }
+            }
+        },
+        "Eat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:pumpkin_pie"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "ing:bd/root"
+}

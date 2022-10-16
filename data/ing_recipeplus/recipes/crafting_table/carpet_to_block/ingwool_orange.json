@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "wool",
+    "ingredients": [
+        {
+            "item": "minecraft:orange_carpet"
+        },
+        {
+            "item": "minecraft:orange_carpet"
+        },
+        {
+            "item": "minecraft:orange_carpet"
+        }
+    ],
+    "result": {
+        "item": "minecraft:orange_wool",
+        "count": 2
+    }
+}

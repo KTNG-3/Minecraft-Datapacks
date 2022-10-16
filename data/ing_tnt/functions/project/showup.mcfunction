@@ -1,0 +1,8 @@
+execute as @s store result score @s ing_TNT.Times run data get entity @s Fuse
+
+execute if score @s ing_TNT.Times matches 60.. run title @a[distance=..7.25] actionbar [{"text": "[ ","color": "dark_green"},{"selector":"@s","color": "dark_green"},{"text":" "},{"score":{"name":"@s","objective":"ing_TNT.Times"},"color": "dark_green"},{"text": " ] ","color": "dark_green"}]
+execute if score @s ing_TNT.Times matches 40..59 run title @a[distance=..7.25] actionbar [{"text": "[ ","color": "green"},{"selector":"@s","color": "green"},{"text":" "},{"score":{"name":"@s","objective":"ing_TNT.Times"},"color": "green"},{"text": " ] ","color": "green"}]
+execute if score @s ing_TNT.Times matches 20..39 run title @a[distance=..7.25] actionbar [{"text": "[ ","color": "yellow"},{"selector":"@s","color": "yellow"},{"text":" "},{"score":{"name":"@s","objective":"ing_TNT.Times"},"color": "yellow"},{"text": " ] ","color": "yellow"}]
+execute if score @s ing_TNT.Times matches 10..19 run title @a[distance=..7.25] actionbar [{"text": "[ ","color": "red"},{"selector":"@s","color": "red"},{"text":" "},{"score":{"name":"@s","objective":"ing_TNT.Times"},"color": "red"},{"text": " ] ","color": "red"}]
+execute if score @s ing_TNT.Times matches 2..10 run title @a[distance=..7.25] actionbar [{"text": "[ ","color": "dark_red"},{"selector":"@s","color": "dark_red"},{"text":" "},{"score":{"name":"@s","objective":"ing_TNT.Times"},"color": "dark_red"},{"text": " ] ","color": "dark_red"}]
+execute if score @s ing_TNT.Times matches ..1 run title @a[distance=..7.25] actionbar [{"text": "Boom!","color": "dark_red"}]

@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "stray"
+        },
+        "description": {
+            "text": "Killing New Monster"
+        },
+        "icon": {
+            "item": "minecraft:bow"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Monster": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:stray"
+                }
+            }
+        }
+    },
+    "parent": "ing:mh/root"
+}

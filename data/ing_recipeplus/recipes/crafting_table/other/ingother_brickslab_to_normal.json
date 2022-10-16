@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "wooden_slab",
+    "ingredients": [
+        {
+            "item": "minecraft:petrified_oak_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:oak_slab",
+        "count": 1
+    }
+}

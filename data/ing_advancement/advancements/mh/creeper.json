@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "creeper"
+        },
+        "description": {
+            "text": "Killing New Monster"
+        },
+        "icon": {
+            "item": "minecraft:gunpowder"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Monster": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:creeper"
+                }
+            }
+        }
+    },
+    "parent": "ing:mh/root"
+}
