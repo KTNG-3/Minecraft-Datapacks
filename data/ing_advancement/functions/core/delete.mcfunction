@@ -1,5 +1,3 @@
-scoreboard players set ing_Advancement ing_Core.isActive 0
-
 ## function
 
 scoreboard objectives remove ing_AVM.Adventure_Time

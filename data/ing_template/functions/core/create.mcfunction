@@ -1,4 +1,3 @@
-scoreboard players set ing_Template ing_Core.isActive 1
 scoreboard players set ing_Template ing_Core.Load 1
 
 # trigger

@@ -1,4 +1,3 @@
-scoreboard players set ing_EndCrystal ing_Core.isActive 1
 scoreboard players set ing_EndCrystal ing_Core.Load 1
 
 ## function

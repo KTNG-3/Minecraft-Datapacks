@@ -1,5 +1,3 @@
-scoreboard players set ing_Math ing_Core.isActive 0
-
 ## function
 
 scoreboard objectives remove ing_Math.Sqrt_Sqrt

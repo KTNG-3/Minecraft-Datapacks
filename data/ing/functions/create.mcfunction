@@ -1,3 +1,3 @@
-scoreboard objectives add ing_Core.isActive dummy
+scoreboard objectives add ing.Help trigger
 
 gamerule sendCommandFeedback false
