@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "text": "dried_kelp"
+        },
+        "description": {
+            "text": "Eatting New Food"
+        },
+        "icon": {
+            "item": "minecraft:dried_kelp"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Items": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:dried_kelp"
+                    ]
+                }
+            }
+        },
+        "Eat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:dried_kelp"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:a_balanced_diet/root"
+}

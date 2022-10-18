@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "jungle"
+        },
+        "description": {
+            "text": "Getting New Biome"
+        },
+        "icon": {
+            "item": "minecraft:vine"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "biome": "minecraft:jungle",
+                        "dimension": "minecraft:overworld"
+                    }
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:adventure_time/root"
+}

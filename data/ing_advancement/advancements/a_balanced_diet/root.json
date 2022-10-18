@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "A Balanced Diet"
+        },
+        "description": {
+            "text": "Eat All 40 Food To Get A Balanced Diet"
+        },
+        "icon": {
+            "item": "minecraft:apple"
+        },
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "parent": "ing_advancement:advancement_help"
+}

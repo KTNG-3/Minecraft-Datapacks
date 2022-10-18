@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "shulker"
+        },
+        "description": {
+            "text": "Killing New Monster"
+        },
+        "icon": {
+            "item": "minecraft:shulker_shell"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Monster": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:shulker"
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:monsters_hunted/root"
+}

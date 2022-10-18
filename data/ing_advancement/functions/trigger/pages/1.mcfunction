@@ -1,1 +1,0 @@
-say [ING_Template] 1 Trigger

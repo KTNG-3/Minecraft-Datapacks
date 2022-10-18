@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "lush_caves"
+        },
+        "description": {
+            "text": "Getting New Biome"
+        },
+        "icon": {
+            "item": "minecraft:azalea"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "biome": "minecraft:lush_caves",
+                        "dimension": "minecraft:overworld"
+                    }
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:adventure_time/root"
+}

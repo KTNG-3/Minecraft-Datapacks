@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "spider"
+        },
+        "description": {
+            "text": "Killing New Monster"
+        },
+        "icon": {
+            "item": "minecraft:string"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Monster": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:spider"
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:monsters_hunted/root"
+}

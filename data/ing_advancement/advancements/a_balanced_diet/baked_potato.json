@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "text": "baked_potato"
+        },
+        "description": {
+            "text": "Eatting New Food"
+        },
+        "icon": {
+            "item": "minecraft:baked_potato"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Items": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:baked_potato"
+                    ]
+                }
+            }
+        },
+        "Eat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:baked_potato"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:a_balanced_diet/root"
+}

@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "basalt_deltas"
+        },
+        "description": {
+            "text": "Getting New Biome"
+        },
+        "icon": {
+            "item": "minecraft:basalt"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "biome": "minecraft:basalt_deltas",
+                        "dimension": "minecraft:the_nether"
+                    }
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:hot_tourist_destinations/root"
+}

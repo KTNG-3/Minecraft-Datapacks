@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Monsters Hunted"
+        },
+        "description": {
+            "text": "Kill All 34 Monster To Get Monsters Hunted"
+        },
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "parent": "ing_advancement:advancement_help"
+}

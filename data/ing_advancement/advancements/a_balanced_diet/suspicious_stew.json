@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "text": "suspicious_stew"
+        },
+        "description": {
+            "text": "Eatting New Food"
+        },
+        "icon": {
+            "item": "minecraft:suspicious_stew"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Items": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:suspicious_stew"
+                    ]
+                }
+            }
+        },
+        "Eat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:suspicious_stew"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:a_balanced_diet/root"
+}

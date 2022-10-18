@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "When the Squad Hops into Town"
+        },
+        "description": {
+            "text": "Get each Frog variant on a Lead"
+        },
+        "icon": {
+            "item": "minecraft:lead"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "parent": "ing_advancement:advancement_help"
+}

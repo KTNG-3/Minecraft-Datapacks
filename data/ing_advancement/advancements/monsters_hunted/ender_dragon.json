@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "ender_dragon"
+        },
+        "description": {
+            "text": "Killing New Monster"
+        },
+        "icon": {
+            "item": "minecraft:dragon_head"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Monster": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:ender_dragon"
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:monsters_hunted/root"
+}

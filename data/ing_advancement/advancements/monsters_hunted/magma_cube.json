@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "magma_cube"
+        },
+        "description": {
+            "text": "Killing New Monster"
+        },
+        "icon": {
+            "item": "minecraft:magma_cream"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Monster": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:magma_cube"
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:monsters_hunted/root"
+}

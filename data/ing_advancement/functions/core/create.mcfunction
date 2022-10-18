@@ -1,10 +1,14 @@
 scoreboard players set ing_Advancement ing_Core.Load 1
 
+# settings
+
+scoreboard objectives add ing_AVM.Settings dummy
+
 ## function
 
-scoreboard objectives add ing_AVM.Adventure_Time dummy
 scoreboard objectives add ing_AVM.A_Balanced_Diet dummy
 scoreboard objectives add ing_AVM.A_Complete_Catalogue dummy
+scoreboard objectives add ing_AVM.Adventure_Time dummy
 scoreboard objectives add ing_AVM.Hot_Tourist_Destinations dummy
 scoreboard objectives add ing_AVM.Monsters_Hunted dummy
 scoreboard objectives add ing_AVM.Two_By_Two dummy

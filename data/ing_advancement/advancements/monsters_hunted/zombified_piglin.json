@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "zombified_piglin"
+        },
+        "description": {
+            "text": "Killing New Monster"
+        },
+        "icon": {
+            "item": "minecraft:zombified_piglin_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Monster": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombified_piglin"
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:monsters_hunted/root"
+}

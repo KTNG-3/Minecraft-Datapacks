@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "text": "porkchop"
+        },
+        "description": {
+            "text": "Eatting New Food"
+        },
+        "icon": {
+            "item": "minecraft:porkchop"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Items": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:porkchop"
+                    ]
+                }
+            }
+        },
+        "Eat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:porkchop"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:a_balanced_diet/root"
+}

@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "panda"
+        },
+        "description": {
+            "text": "Breeding New Animal"
+        },
+        "icon": {
+            "item": "minecraft:bamboo"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "Animal": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "minecraft:panda"
+                }
+            }
+        }
+    },
+    "parent": "ing_advancement:two_by_two/root"
+}
