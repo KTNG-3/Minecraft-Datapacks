@@ -1,0 +1,1 @@
+execute as @s at @s run particle dust 1 0 0 1 ~ ~1 ~ 0 200 0 10 2500 force @a[tag=ing_waypoint.LoadPlayer,limit=1]
