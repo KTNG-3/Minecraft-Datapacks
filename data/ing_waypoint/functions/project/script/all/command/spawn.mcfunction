@@ -1,4 +1,4 @@
-execute as @s at @s run tp @s ~ ~0.01 ~
+execute as @s at @s align xz run tp @s ~0.50 ~ ~0.50
 
 # summon
 execute as @s at @s align xyz run summon armor_stand ~ ~ ~ {CustomNameVisible:1b,CustomName:'{"text": "Waypoint"}',NoGravity:1b,Silent:1b,Invulnerable:1b,HasVisualFire:0b,Marker:1b,Invisible:1b,Tags:["ing_waypoint.New"],DisabledSlots:4144959}
@@ -21,8 +21,6 @@ execute as @e[tag=ing_waypoint.New,limit=1] run scoreboard players set @s ing_WP
 # done
 
 tag @e[tag=ing_waypoint.New,limit=1] remove ing_waypoint.New
-
-execute as @s at @s run tp @s ~ ~0.01 ~
 
 execute as @s run function ing:trigger/pages/-100
 
