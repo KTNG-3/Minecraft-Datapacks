@@ -1,0 +1,9 @@
+# To Do
+
+- Auto Totem // Auto Items (Torch // Totem)
+
+- "Copper" recipe group
+
+# command
+
+prettier --print-width 10 --tab-width 4 --trailing-comma none --write .
