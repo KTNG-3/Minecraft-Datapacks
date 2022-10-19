@@ -20,6 +20,8 @@ scoreboard objectives remove ing.Help
 scoreboard objectives remove ing_Core.Trigger_Old
 scoreboard objectives remove ing_Core.Trigger_OldTime
 
+tag @e remove ing.Admin
+
 # disable
 
 datapack disable "file/ING Project Minecraft Datapack"
