@@ -1,3 +1,6 @@
+#playsound
+execute as @s unless score @s ing.Help matches 0 run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.25 2 1
+
 # pages
 
 execute as @s if score @s ing.Help matches -1 run function ing:trigger/pages/-1

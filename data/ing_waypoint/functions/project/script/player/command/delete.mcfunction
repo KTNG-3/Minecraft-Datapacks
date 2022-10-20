@@ -14,7 +14,7 @@ kill @e[tag=ing_waypoint.LoadTarget,limit=1]
 
 # finish
 
-execute as @s at @s run playsound minecraft:entity.wither.break_block master @s ~ ~ ~ 1 1 1
+execute as @s at @s if score @s ing_WP.Settings_Sound matches 1 run playsound minecraft:entity.wither.break_block master @s ~ ~ ~ 1 1 1
 
 tag @s remove ing_waypoint.LoadPlayer
 tag @e remove ing_waypoint.LoadTarget

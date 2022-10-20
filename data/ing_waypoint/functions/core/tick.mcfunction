@@ -8,6 +8,8 @@ execute unless score Distance ing_WP.Settings matches 0..1 run scoreboard player
 execute as @a unless score @s ing_WP.Settings_Location matches 0..1 run scoreboard players set @s ing_WP.Settings_Location 1
 execute as @a unless score @s ing_WP.Settings_Distance matches 0..1 run scoreboard players set @s ing_WP.Settings_Distance 1
 execute as @a unless score @s ing_WP.Settings_ArrowLocation matches 1..3 run scoreboard players set @s ing_WP.Settings_ArrowLocation 1
+execute as @a unless score @s ing_WP.Settings_AutoCancel matches 1.. run scoreboard players set @s ing_WP.Settings_AutoCancel 6
+execute as @a unless score @s ing_WP.Settings_Sound matches 0..1 run scoreboard players set @s ing_WP.Settings_Sound 1
 
 ## function
 

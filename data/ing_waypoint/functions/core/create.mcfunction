@@ -11,6 +11,8 @@ scoreboard players set Max_All_Waypoint ing_WP.Settings 5
 scoreboard objectives add ing_WP.Settings_Location dummy
 scoreboard objectives add ing_WP.Settings_Distance dummy
 scoreboard objectives add ing_WP.Settings_ArrowLocation dummy
+scoreboard objectives add ing_WP.Settings_AutoCancel dummy
+scoreboard objectives add ing_WP.Settings_Sound dummy
 
 ## function
 

@@ -34,3 +34,7 @@ execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6522 run 
 execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6531 run function ing_waypoint:trigger/pages/6531
 execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6532 run function ing_waypoint:trigger/pages/6532
 execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6533 run function ing_waypoint:trigger/pages/6533
+execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6541 run function ing_waypoint:trigger/pages/6541
+execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6542 run function ing_waypoint:trigger/pages/6542
+execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6551 run function ing_waypoint:trigger/pages/6551
+execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6552 run function ing_waypoint:trigger/pages/6552

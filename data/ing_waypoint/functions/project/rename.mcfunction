@@ -13,8 +13,8 @@ execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if entity @e[tag=ing_waypo
 
 # finish
 
-execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] if data entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner = @a[distance=..3,sort=nearest,limit=1] ing_UserData.ID run playsound minecraft:block.anvil.use master @a[distance=..5] ~ ~ ~ 0.5 1 1
-execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] if data entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner matches -1 if entity @a[tag=ing.Admin,distance=..3,sort=nearest,limit=1] run playsound minecraft:block.anvil.use master @a[distance=..5] ~ ~ ~ 0.5 1 1
+execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] if data entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner = @a[distance=..3,sort=nearest,limit=1] ing_UserData.ID run playsound minecraft:block.anvil.use master @a[distance=..5,scores={ing_WP.Settings_Sound=1}] ~ ~ ~ 0.5 1 1
+execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] if data entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner matches -1 if entity @a[tag=ing.Admin,distance=..3,sort=nearest,limit=1] run playsound minecraft:block.anvil.use master @a[distance=..5,scores={ing_WP.Settings_Sound=1}] ~ ~ ~ 0.5 1 1
 
 tag @e[tag=ing_waypoint.Name_LoadTarget] remove ing_waypoint.Name_LoadTarget
 tag @e[tag=ing_waypoint.Name_LoadPaper,limit=1] remove ing_waypoint.Name_LoadPaper

@@ -1,7 +1,7 @@
 execute as @s at @s align xz run tp @s ~0.50 ~ ~0.50
 
 # summon
-execute as @s at @s align xyz run summon armor_stand ~ ~ ~ {CustomNameVisible:0b,CustomName:'{"text": "Waypoint"}',NoGravity:1b,Silent:1b,Invulnerable:1b,HasVisualFire:0b,Marker:1b,Invisible:1b,Tags:["ing_waypoint.New"],DisabledSlots:4144959}
+execute as @s at @s run summon armor_stand ~ ~ ~ {CustomNameVisible:0b,CustomName:'{"text": "Waypoint"}',NoGravity:1b,Silent:1b,Invulnerable:1b,HasVisualFire:0b,Marker:1b,Invisible:1b,Tags:["ing_waypoint.New"],DisabledSlots:4144959}
 
 ## location
 execute as @s run function ing_location:project/position
