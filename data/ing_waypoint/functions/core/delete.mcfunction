@@ -4,6 +4,7 @@ scoreboard objectives remove ing_WP.Settings
 
 scoreboard objectives remove ing_WP.Settings_Location
 scoreboard objectives remove ing_WP.Settings_Distance
+scoreboard objectives remove ing_WP.Settings_ArrowLocation
 
 ## function
 
