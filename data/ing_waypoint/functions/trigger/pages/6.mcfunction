@@ -3,8 +3,8 @@ tellraw @s {"text":"-----------------------------------------------------","colo
 tellraw @s [{"text" : "Waypoint","color": "dark_green","bold": true},{"text": " Help","color": "gold"}]
 tellraw @s {"text" : " "}
 tellraw @s [{"text" : "----------- Waypoint -----------","color": "dark_aqua"}]
-execute if score Player_Enable ing_WP.Settings matches 0 if score All_Enable ing_WP.Settings matches 0 if entity @s[tag=!ing.Admin] run tellraw @s {"text" : " "}
-execute if score Player_Enable ing_WP.Settings matches 0 if score All_Enable ing_WP.Settings matches 0 if entity @s[tag=!ing.Admin] run tellraw @s {"text" : "   Nothing to see here","color": "blue"}
+execute if score Player_Enable ing_WP.Settings matches 0 if score All_Enable ing_WP.Settings matches 0 if entity @s run tellraw @s {"text" : " "}
+execute if score Player_Enable ing_WP.Settings matches 0 if score All_Enable ing_WP.Settings matches 0 if entity @s run tellraw @s {"text" : "   Nothing to see here","color": "blue"}
 execute if score Player_Enable ing_WP.Settings matches 1 if score All_Enable ing_WP.Settings matches 1 run tellraw @s {"text" : " "}
 execute if score Player_Enable ing_WP.Settings matches 1 if score All_Enable ing_WP.Settings matches 0 run tellraw @s {"text" : " "}
 execute if score Player_Enable ing_WP.Settings matches 0 if score All_Enable ing_WP.Settings matches 1 run tellraw @s {"text" : " "}

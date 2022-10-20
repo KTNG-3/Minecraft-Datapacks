@@ -5,8 +5,8 @@ tellraw @s {"text" : " "}
 tellraw @s [{"text" : "----------- Settings -----------","color": "dark_aqua"}]
 tellraw @s {"text" : " "}
 
-execute if score Enable ing_AVM.Settings matches 1 run tellraw @s [{"text" : ">> ","color":"green","bold": true},{"text": "Advancements Helper ","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5211"},"hoverEvent":{"action":"show_text","contents":[{"text":"Advancements Helper\n\nClick: Disable\nNow: Enable","bold":false,"color":"gray"}]}}]
-execute if score Enable ing_AVM.Settings matches 0 run tellraw @s [{"text" : ">> ","color":"red","bold": true},{"text": "Advancements Helper ","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5212"},"hoverEvent":{"action":"show_text","contents":[{"text":"Advancements Helper\n\nClick: Enable\nNow: Disable","bold":false,"color":"gray"}]}}]
+execute if score Enable ing_AVM.Settings matches 1 run tellraw @s [{"text" : "[✓] ","color":"green","bold": true},{"text": "Advancements Helper ","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5211"},"hoverEvent":{"action":"show_text","contents":[{"text":"Advancements Helper\n\nClick: Disable\nNow: Enable","bold":false,"color":"gray"}]}}]
+execute if score Enable ing_AVM.Settings matches 0 run tellraw @s [{"text" : "[✕] ","color":"red","bold": true},{"text": "Advancements Helper ","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5212"},"hoverEvent":{"action":"show_text","contents":[{"text":"Advancements Helper\n\nClick: Enable\nNow: Disable","bold":false,"color":"gray"}]}}]
 
 tellraw @s {"text" : " "}
 tellraw @s [{"text" : "--------------------------------","color": "dark_aqua"}]

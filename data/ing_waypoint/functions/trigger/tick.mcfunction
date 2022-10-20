@@ -26,15 +26,15 @@ execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6452 run 
 execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6461 run function ing_waypoint:trigger/pages/6461
 execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6462 run function ing_waypoint:trigger/pages/6462
 
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 65 run function ing_waypoint:trigger/pages/65
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6511 run function ing_waypoint:trigger/pages/6511
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6512 run function ing_waypoint:trigger/pages/6512
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6521 run function ing_waypoint:trigger/pages/6521
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6522 run function ing_waypoint:trigger/pages/6522
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6531 run function ing_waypoint:trigger/pages/6531
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6532 run function ing_waypoint:trigger/pages/6532
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6533 run function ing_waypoint:trigger/pages/6533
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6541 run function ing_waypoint:trigger/pages/6541
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6542 run function ing_waypoint:trigger/pages/6542
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6551 run function ing_waypoint:trigger/pages/6551
-execute as @s if entity @s[tag=ing.Admin] if score @s ing.Help matches 6552 run function ing_waypoint:trigger/pages/6552
+execute as @s if entity @s if score @s ing.Help matches 65 run function ing_waypoint:trigger/pages/65
+execute as @s if entity @s if score @s ing.Help matches 6511 run function ing_waypoint:trigger/pages/6511
+execute as @s if entity @s if score @s ing.Help matches 6512 run function ing_waypoint:trigger/pages/6512
+execute as @s if entity @s if score @s ing.Help matches 6521 run function ing_waypoint:trigger/pages/6521
+execute as @s if entity @s if score @s ing.Help matches 6522 run function ing_waypoint:trigger/pages/6522
+execute as @s if entity @s if score @s ing.Help matches 6531 run function ing_waypoint:trigger/pages/6531
+execute as @s if entity @s if score @s ing.Help matches 6532 run function ing_waypoint:trigger/pages/6532
+execute as @s if entity @s if score @s ing.Help matches 6533 run function ing_waypoint:trigger/pages/6533
+execute as @s if entity @s if score @s ing.Help matches 6541 run function ing_waypoint:trigger/pages/6541
+execute as @s if entity @s if score @s ing.Help matches 6542 run function ing_waypoint:trigger/pages/6542
+execute as @s if entity @s if score @s ing.Help matches 6551 run function ing_waypoint:trigger/pages/6551
+execute as @s if entity @s if score @s ing.Help matches 6552 run function ing_waypoint:trigger/pages/6552
