@@ -1,6 +1,8 @@
 # settings
 
 execute unless score Enable ing_EndCrystal.Settings matches 0..1 run scoreboard players set Enable ing_EndCrystal.Settings 1
+execute unless score Format ing_EndCrystal.Settings matches 1..3 run scoreboard players set Format ing_EndCrystal.Settings 1
+execute unless score Max ing_EndCrystal.Settings matches 1.. run scoreboard players set Max ing_EndCrystal.Settings 10
 
 execute as @a unless score @s ing_EndCrystal.Settings_Enable matches 0..1 run scoreboard players set @s ing_EndCrystal.Settings_Enable 1
 

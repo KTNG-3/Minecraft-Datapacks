@@ -6,12 +6,9 @@ execute if score Enable ing_EndCrystal.Settings matches 0 run bossbar set ing_en
 
 #change name
 
-execute if score EndCrystal ing_EndCrystal.Data matches 10.. run bossbar set ing_endcrystal:end_crystal name [{"text":"End Crystal [ ","color":"dark_purple","bold":true},{"score":{"name":"EndCrystal","objective":"ing_EndCrystal.Data"},"color":"dark_red"},{"text":" / 10","color":"dark_red","bold":true},{"text":" ]","color":"dark_purple","bold":true}]
-execute if score EndCrystal ing_EndCrystal.Data matches 8..9 run bossbar set ing_endcrystal:end_crystal name [{"text":"End Crystal [ ","color":"dark_purple","bold":true},{"score":{"name":"EndCrystal","objective":"ing_EndCrystal.Data"},"color":"red"},{"text":" / 10","color":"red","bold":true},{"text":" ]","color":"dark_purple","bold":true}]
-execute if score EndCrystal ing_EndCrystal.Data matches 6..7 run bossbar set ing_endcrystal:end_crystal name [{"text":"End Crystal [ ","color":"dark_purple","bold":true},{"score":{"name":"EndCrystal","objective":"ing_EndCrystal.Data"},"color":"gold"},{"text":" / 10","color":"gold","bold":true},{"text":" ]","color":"dark_purple","bold":true}]
-execute if score EndCrystal ing_EndCrystal.Data matches 4..5 run bossbar set ing_endcrystal:end_crystal name [{"text":"End Crystal [ ","color":"dark_purple","bold":true},{"score":{"name":"EndCrystal","objective":"ing_EndCrystal.Data"},"color":"yellow"},{"text":" / 10","color":"yellow","bold":true},{"text":" ]","color":"dark_purple","bold":true}]
-execute if score EndCrystal ing_EndCrystal.Data matches 2..3 run bossbar set ing_endcrystal:end_crystal name [{"text":"End Crystal [ ","color":"dark_purple","bold":true},{"score":{"name":"EndCrystal","objective":"ing_EndCrystal.Data"},"color":"dark_green"},{"text":" / 10","color":"dark_green","bold":true},{"text":" ]","color":"dark_purple","bold":true}]
-execute if score EndCrystal ing_EndCrystal.Data matches ..1 run bossbar set ing_endcrystal:end_crystal name [{"text":"End Crystal [ ","color":"dark_purple","bold":true},{"score":{"name":"EndCrystal","objective":"ing_EndCrystal.Data"},"color":"green"},{"text":" / 10","color":"green","bold":true},{"text":" ]","color":"dark_purple","bold":true}]
+execute if score Format ing_EndCrystal.Settings matches 1 run function ing_endcrystal:project/format/1
+execute if score Format ing_EndCrystal.Settings matches 2 run function ing_endcrystal:project/format/2
+execute if score Format ing_EndCrystal.Settings matches 3 run function ing_endcrystal:project/format/3
 
 #showup who
 
