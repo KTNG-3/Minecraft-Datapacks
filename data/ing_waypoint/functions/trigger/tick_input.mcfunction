@@ -10,8 +10,7 @@ execute as @s if score @s ing_Core.Trigger_Old matches 633 if entity @s[tag=ing.
 
 # reset
 
-scoreboard players set @s ing_Core.Trigger_Old 0
-scoreboard players set @s ing_Core.Trigger_OldTime 0
+scoreboard players set @s ing_Core.Trigger_OldTime 1
 
 scoreboard players set @s ing.Help 0
 

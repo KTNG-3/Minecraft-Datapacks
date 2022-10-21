@@ -23,4 +23,4 @@ tag @e remove ing_waypoint.LoadTarget
 tag @e remove ing_waypoint.LoadPlayer
 
 execute as @s run scoreboard players set @s ing.Help 624
-execute as @s run function ing_waypoint:trigger/tick
+execute as @s run function ing:trigger/tick

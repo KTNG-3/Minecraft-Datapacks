@@ -25,7 +25,7 @@ tag @e[tag=ing_waypoint.New,limit=1] remove ing_waypoint.New
 execute as @s run function ing:trigger/pages/-100
 
 execute as @s run scoreboard players set @s ing.Help 622
-execute as @s run function ing_waypoint:trigger/tick
+execute as @s run function ing:trigger/tick
 
 execute as @s run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"Create new personal Waypoint at [ ","color":"gold","bold":false},{"score":{"name":"@s","objective":"ing_Location.Position_x"},"color":"red"},{"text":", ","color":"red"},{"score":{"name":"@s","objective":"ing_Location.Position_y"},"color":"red"},{"text":", ","color":"red"},{"score":{"name":"@s","objective":"ing_Location.Position_z"},"color":"red"},{"text":" ]","color":"gold","bold":false}]
 execute as @s run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"We are not recommended to create a Waypoint at a different dimension","color":"gold","bold":false}]

@@ -12,9 +12,6 @@ scoreboard objectives add ing_UserData.MobKill minecraft.custom:minecraft.mob_ki
 scoreboard objectives add ing_UserData.Damage_Temp minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add ing_UserData.Damage dummy [{"text":"⚔ ","bold":false,"color":"red"},{"text":"Damage","bold":true,"color":"red"}]
 
-scoreboard objectives setdisplay belowName ing_UserData.Health
-scoreboard objectives setdisplay list ing_UserData.Health
-
 # online time
 
 scoreboard objectives add ing_UserData.TIME_tik dummy
