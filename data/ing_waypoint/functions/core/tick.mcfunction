@@ -4,6 +4,7 @@ execute unless score Player_Enable ing_WP.Settings matches 0..1 run scoreboard p
 execute unless score All_Enable ing_WP.Settings matches 0..1 run scoreboard players set All_Enable ing_WP.Settings 1
 execute unless score Location ing_WP.Settings matches 0..1 run scoreboard players set Location ing_WP.Settings 1
 execute unless score Distance ing_WP.Settings matches 0..1 run scoreboard players set Distance ing_WP.Settings 1
+execute unless score Forceload ing_WP.Settings matches 0..1 run scoreboard players set Forceload ing_WP.Settings 1
 
 execute as @a unless score @s ing_WP.Settings_Location matches 0..1 run scoreboard players set @s ing_WP.Settings_Location 1
 execute as @a unless score @s ing_WP.Settings_Distance matches 0..1 run scoreboard players set @s ing_WP.Settings_Distance 1

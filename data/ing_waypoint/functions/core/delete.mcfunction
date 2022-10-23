@@ -34,11 +34,14 @@ tag @e remove ing_waypoint.LoadPlayer
 tag @e remove ing_waypoint.LoadTarget
 tag @e remove ing_waypoint.Name_LoadPaper
 tag @e remove ing_waypoint.Name_LoadTarget
-execute as @e[type=armor_stand] unless score @s ing_WP.DATA_ID matches 0 run kill @s
+execute as @e[type=minecraft:armor_stand,tag=ing_waypoint.Waypoint] at @s if score @s ing_WP.DATA_FindForceload matches 0 run forceload remove ~ ~ ~ ~
+execute as @e[type=minecraft:armor_stand,tag=ing_waypoint.Waypoint] run kill @s
+tag @e remove ing_waypoint.Waypoint
 
 scoreboard objectives remove ing_WP.DATA_ID
 scoreboard objectives remove ing_WP.DATA_Owner
 scoreboard objectives remove ing_WP.DATA_Visibility
+scoreboard objectives remove ing_WP.DATA_FindForceload
 
 scoreboard objectives remove ing_WP.LoadPlayer_Slot
 scoreboard objectives remove ing_WP.LoadPlayer_Empty

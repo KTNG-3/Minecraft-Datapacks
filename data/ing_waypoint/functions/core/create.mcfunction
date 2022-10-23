@@ -31,6 +31,8 @@ scoreboard objectives add ing_WP.Distance dummy
 scoreboard objectives add ing_WP.DATA_ID dummy
 scoreboard objectives add ing_WP.DATA_Owner dummy
 scoreboard objectives add ing_WP.DATA_Visibility dummy
+scoreboard objectives add ing_WP.DATA_FindForceload dummy
+
 scoreboard objectives add ing_WP.LoadPlayer_Slot dummy
 scoreboard objectives add ing_WP.LoadPlayer_Empty dummy
 scoreboard objectives add ing_WP.LoadAll_Slot dummy

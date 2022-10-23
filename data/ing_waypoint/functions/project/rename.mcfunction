@@ -5,7 +5,7 @@ tag @e[tag=ing_waypoint.Name_LoadPaper] remove ing_waypoint.Name_LoadPaper
 
 # script
 
-execute as @e[type=armor_stand] unless score @s ing_WP.DATA_ID matches 0 run tag @s add ing_waypoint.Name_LoadTarget
+execute as @e[type=minecraft:armor_stand,tag=ing_waypoint.Waypoint] run tag @s add ing_waypoint.Name_LoadTarget
 execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s run tag @e[type=minecraft:item,nbt={Item:{Count:1b},OnGround:1b},distance=..1.5] add ing_waypoint.Name_LoadPaper
 
 execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] if data entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner = @a[distance=..3,sort=nearest,limit=1] ing_UserData.ID run data modify entity @s CustomName set from entity @e[tag=ing_waypoint.Name_LoadPaper,sort=nearest,limit=1] Item.tag.display.Name
