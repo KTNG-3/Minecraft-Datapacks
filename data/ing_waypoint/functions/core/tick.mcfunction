@@ -16,7 +16,7 @@ execute as @a unless score @s ing_WP.Settings_Sound matches 0..1 run scoreboard 
 
 # waypoint id
 
-execute as @a if score @s ing_Core.Trigger_Old matches 621..633 run scoreboard players enable @a ing.Waypoint
-execute as @a unless score @s ing_Core.Trigger_Old matches 621..633 run trigger ing.Waypoint set 0
+execute as @a if score @s ing_Core.Trigger_Last matches 621..633 run scoreboard players enable @a ing.Waypoint
+execute as @a unless score @s ing_Core.Trigger_Last matches 621..633 run trigger ing.Waypoint set 0
 
 execute as @a at @s unless score @s ing.Waypoint matches 0 run function ing_waypoint:trigger/tick_input

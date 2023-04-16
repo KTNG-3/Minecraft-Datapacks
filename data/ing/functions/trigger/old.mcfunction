@@ -1,2 +1,0 @@
-execute as @s unless score @s ing_Core.Trigger_Old = @s ing.Help run scoreboard players set @s ing_Core.Trigger_OldTime 0
-execute as @s store result score @s ing_Core.Trigger_Old run scoreboard players get @s ing.Help
