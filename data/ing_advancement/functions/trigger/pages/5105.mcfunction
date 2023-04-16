@@ -1,7 +1,7 @@
 execute as @s run function ing:trigger/pages/-10
 tellraw @s {"text":"-----------------------------------------------------","color":"gold"}
 tellraw @s [{"text" : "Advancements Helper","color": "dark_green","bold": true},{"text": " Monsters Hunted","color": "gold"}]
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 
 execute if entity @s[advancements={ing_advancement:monsters_hunted/blaze=true}] as @s run tellraw @s [{"text":"[✓] Blaze","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:monsters_hunted/blaze=false}] as @s run tellraw @s [{"text":"[❌] Blaze","color":"red","bold":true}]
@@ -72,9 +72,9 @@ execute if entity @s[advancements={ing_advancement:monsters_hunted/zombie=false}
 execute if entity @s[advancements={ing_advancement:monsters_hunted/zombified_piglin=true}] as @s run tellraw @s [{"text":"[✓] Zombified Piglin","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:monsters_hunted/zombified_piglin=false}] as @s run tellraw @s [{"text":"[❌] Zombified Piglin","color":"red","bold":true}]
 
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 tellraw @s [{"text" : "^^ Scroll Up To Look More ^^","color":"dark_aqua","bold": true}]
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 tellraw @s [{"text" : "<< ","color":"gold","bold": true},{"text": "Back To Advancements Menu","color": "gold","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 51"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go Back To ` Advancements ` Menu","bold":false,"color":"gray"}]}}]
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 tellraw @s {"text" : "-----------------------------------------------------","color":"gold"}

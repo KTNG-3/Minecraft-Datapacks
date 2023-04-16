@@ -1,7 +1,7 @@
 execute as @s run function ing:trigger/pages/-10
 tellraw @s {"text":"-----------------------------------------------------","color":"gold"}
 tellraw @s [{"text" : "Advancements Helper","color": "dark_green","bold": true},{"text": " Adventure Time","color": "gold"}]
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 
 execute if entity @s[advancements={ing_advancement:adventure_time/badlands=true}] as @s run tellraw @s [{"text":"[✓] Badlands","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/badlands=false}] as @s run tellraw @s [{"text":"[❌] Badlands","color":"red","bold":true}]
@@ -104,9 +104,9 @@ execute if entity @s[advancements={ing_advancement:adventure_time/windswept_sava
 execute if entity @s[advancements={ing_advancement:adventure_time/wooded_badlands=true}] as @s run tellraw @s [{"text":"[✓] Wooded Badlands","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/wooded_badlands=false}] as @s run tellraw @s [{"text":"[❌] Wooded Badlands","color":"red","bold":true}]
 
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 tellraw @s [{"text" : "^^ Scroll Up To Look More ^^","color":"dark_aqua","bold": true}]
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 tellraw @s [{"text" : "<< ","color":"gold","bold": true},{"text": "Back To Advancements Menu","color": "gold","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 51"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go Back To ` Advancements ` Menu","bold":false,"color":"gray"}]}}]
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 tellraw @s {"text" : "-----------------------------------------------------","color":"gold"}

@@ -1,7 +1,7 @@
 execute as @s run function ing:trigger/pages/-10
 tellraw @s {"text":"-----------------------------------------------------","color":"gold"}
 tellraw @s [{"text" : "Advancements Helper","color": "dark_green","bold": true},{"text": " A Complete Catalogue","color": "gold"}]
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 
 execute if entity @s[advancements={ing_advancement:a_complete_catalogue/black=true}] as @s run tellraw @s [{"text":"[✓] Black","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:a_complete_catalogue/black=false}] as @s run tellraw @s [{"text":"[❌] Black","color":"red","bold":true}]
@@ -26,7 +26,7 @@ execute if entity @s[advancements={ing_advancement:a_complete_catalogue/tuxedo=f
 execute if entity @s[advancements={ing_advancement:a_complete_catalogue/white=true}] as @s run tellraw @s [{"text":"[✓] White","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:a_complete_catalogue/white=false}] as @s run tellraw @s [{"text":"[❌] White","color":"red","bold":true}]
 
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 tellraw @s [{"text" : "<< ","color":"gold","bold": true},{"text": "Back To Advancements Menu","color": "gold","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 51"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go Back To ` Advancements ` Menu","bold":false,"color":"gray"}]}}]
-tellraw @s {"text" : " "}
+tellraw @s {"text" : ""}
 tellraw @s {"text" : "-----------------------------------------------------","color":"gold"}
