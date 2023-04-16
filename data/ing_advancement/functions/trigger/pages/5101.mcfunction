@@ -1,4 +1,4 @@
-execute as @s run function ing:trigger/pages/-10
+execute as @s run function ing:trigger/pages/-100
 tellraw @s {"text":"-----------------------------------------------------","color":"gold"}
 tellraw @s [{"text" : "Advancements Helper","color": "dark_green","bold": true},{"text": " A Balanced Diet","color": "gold"}]
 tellraw @s {"text" : ""}

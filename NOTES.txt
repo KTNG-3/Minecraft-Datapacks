@@ -2,7 +2,8 @@
 
 - Auto Totem // Auto Items (Torch // Totem)
 
-- "Copper" recipe group
+- Two By Two (Camel / Sniffer)
+- Adventuring Time (Cherry Grove‌)
 
 # command
 

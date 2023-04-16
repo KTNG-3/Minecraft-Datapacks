@@ -6,7 +6,7 @@
             "item": "minecraft:oak_planks"
         },
         "2": {
-            "tag": "ing:woodchest"
+            "tag": "ing_recipeplus:woodchest"
         }
     },
     "pattern": [

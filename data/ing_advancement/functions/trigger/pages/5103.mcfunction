@@ -1,6 +1,6 @@
-execute as @s run function ing:trigger/pages/-10
+execute as @s run function ing:trigger/pages/-100
 tellraw @s {"text":"-----------------------------------------------------","color":"gold"}
-tellraw @s [{"text" : "Advancements Helper","color": "dark_green","bold": true},{"text": " Adventure Time","color": "gold"}]
+tellraw @s [{"text" : "Advancements Helper","color": "dark_green","bold": true},{"text": " Adventuring Time","color": "gold"}]
 tellraw @s {"text" : ""}
 
 execute if entity @s[advancements={ing_advancement:adventure_time/badlands=true}] as @s run tellraw @s [{"text":"[✓] Badlands","color":"dark_green","bold":true}]
@@ -17,6 +17,8 @@ execute if entity @s[advancements={ing_advancement:adventure_time/dark_forest=tr
 execute if entity @s[advancements={ing_advancement:adventure_time/dark_forest=false}] as @s run tellraw @s [{"text":"[❌] Dark Forest","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/deep_cold_ocean=true}] as @s run tellraw @s [{"text":"[✓] Deep Cold Ocean","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/deep_cold_ocean=false}] as @s run tellraw @s [{"text":"[❌] Deep Cold Ocean","color":"red","bold":true}]
+execute if entity @s[advancements={ing_advancement:adventure_time/deep_dark=true}] as @s run tellraw @s [{"text":"[✓] Deep Dark","color":"dark_green","bold":true}]
+execute if entity @s[advancements={ing_advancement:adventure_time/deep_dark=false}] as @s run tellraw @s [{"text":"[❌] Deep Dark","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/deep_frozen_ocean=true}] as @s run tellraw @s [{"text":"[✓] Deep Frozen Ocean","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/deep_frozen_ocean=false}] as @s run tellraw @s [{"text":"[❌] Deep Frozen Ocean","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/deep_lukewarm_ocean=true}] as @s run tellraw @s [{"text":"[✓] Deep Lukewarm Ocean","color":"dark_green","bold":true}]
@@ -51,6 +53,8 @@ execute if entity @s[advancements={ing_advancement:adventure_time/lukewarm_ocean
 execute if entity @s[advancements={ing_advancement:adventure_time/lukewarm_ocean=false}] as @s run tellraw @s [{"text":"[❌] Lukewarm Ocean","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/lush_caves=true}] as @s run tellraw @s [{"text":"[✓] Lush Caves","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/lush_caves=false}] as @s run tellraw @s [{"text":"[❌] Lush Caves","color":"red","bold":true}]
+execute if entity @s[advancements={ing_advancement:adventure_time/mangrove_swamp=true}] as @s run tellraw @s [{"text":"[✓] Mangrove Swamp","color":"dark_green","bold":true}]
+execute if entity @s[advancements={ing_advancement:adventure_time/mangrove_swamp=false}] as @s run tellraw @s [{"text":"[❌] Mangrove Swamp","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/meadow=true}] as @s run tellraw @s [{"text":"[✓] Meadow","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/meadow=false}] as @s run tellraw @s [{"text":"[❌] Meadow","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/mushroom_fields=true}] as @s run tellraw @s [{"text":"[✓] Mushroom Fields","color":"dark_green","bold":true}]
