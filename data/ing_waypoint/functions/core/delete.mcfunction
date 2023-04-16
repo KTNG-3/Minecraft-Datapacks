@@ -51,4 +51,4 @@ scoreboard objectives remove ing_WP.LoadAll_Empty
 
 # loop
 
-schedule clear ing_waypoint:script/loop
+schedule clear ing_waypoint:project/loop

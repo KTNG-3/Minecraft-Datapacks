@@ -11,7 +11,7 @@ scoreboard players operation @s ing_WP.LoadPlayer_Empty -= @s ing_WP.LoadPlayer_
 # create waypoint
 
 execute as @s unless score @s ing_WP.LoadPlayer_Empty matches 1.. run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"You don't have enough waypoint slot","color":"red","bold":true}]
-execute as @s if score @s ing_WP.LoadPlayer_Empty matches 1.. at @s if entity @e[type=minecraft:armor_stand,distance=..2] run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"To spawn Waypoint you must be away from other Armor Stand for at least 2 blocks","color":"red","bold":true}]
-execute as @s if score @s ing_WP.LoadPlayer_Empty matches 1.. at @s unless entity @e[type=minecraft:armor_stand,distance=..2] run function ing_waypoint:project/script/player/command/spawn
+execute as @s if score @s ing_WP.LoadPlayer_Empty matches 1.. at @s if entity @e[type=minecraft:armor_stand,distance=..3] run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"To spawn Waypoint you must be away from other Armor Stand for at least 3 blocks","color":"red","bold":true}]
+execute as @s if score @s ing_WP.LoadPlayer_Empty matches 1.. at @s unless entity @e[type=minecraft:armor_stand,distance=..3] run function ing_waypoint:project/script/player/command/spawn
 
 tag @s remove ing_waypoint.LoadPlayer
