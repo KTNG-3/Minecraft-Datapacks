@@ -40,3 +40,5 @@ execute as @s if entity @s if score @s ing.Help matches 6541 run function ing_wa
 execute as @s if entity @s if score @s ing.Help matches 6542 run function ing_waypoint:trigger/pages/6542
 execute as @s if entity @s if score @s ing.Help matches 6551 run function ing_waypoint:trigger/pages/6551
 execute as @s if entity @s if score @s ing.Help matches 6552 run function ing_waypoint:trigger/pages/6552
+execute as @s if entity @s if score @s ing.Help matches 6561 run function ing_waypoint:trigger/pages/6561
+execute as @s if entity @s if score @s ing.Help matches 6562 run function ing_waypoint:trigger/pages/6562

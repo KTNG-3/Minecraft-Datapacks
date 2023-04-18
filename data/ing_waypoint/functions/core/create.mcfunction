@@ -13,6 +13,7 @@ scoreboard objectives add ing_WP.Settings_Distance dummy
 scoreboard objectives add ing_WP.Settings_ArrowLocation dummy
 scoreboard objectives add ing_WP.Settings_AutoCancel dummy
 scoreboard objectives add ing_WP.Settings_Sound dummy
+scoreboard objectives add ing_WP.Settings_Invisible dummy
 
 ## function
 

@@ -11,6 +11,7 @@ execute as @a unless score @s ing_WP.Settings_Distance matches 0..1 run scoreboa
 execute as @a unless score @s ing_WP.Settings_ArrowLocation matches 1..3 run scoreboard players set @s ing_WP.Settings_ArrowLocation 1
 execute as @a unless score @s ing_WP.Settings_AutoCancel matches 1.. run scoreboard players set @s ing_WP.Settings_AutoCancel 6
 execute as @a unless score @s ing_WP.Settings_Sound matches 0..1 run scoreboard players set @s ing_WP.Settings_Sound 1
+execute as @a unless score @s ing_WP.Settings_Invisible matches 0..1 run scoreboard players set @s ing_WP.Settings_Invisible 0
 
 ## function
 

@@ -18,8 +18,9 @@ execute as @e[tag=ing_waypoint.New,limit=1] run scoreboard players set @s ing_WP
 
 # forceload
 
-execute as @e[tag=ing_waypoint.New,limit=1] at @s store success score @s ing_WP.DATA_FindForceload run forceload query ~ ~
-execute as @e[tag=ing_waypoint.New,limit=1] at @s if score @s ing_WP.DATA_FindForceload matches 0 if score Forceload ing_WP.Settings matches 1 run forceload add ~ ~ ~ ~
+execute as @e[tag=ing_waypoint.New,limit=1] at @s if score Forceload ing_WP.Settings matches 0 run scoreboard players set @s ing_WP.DATA_FindForceload -1
+execute as @e[tag=ing_waypoint.New,limit=1] at @s unless score Forceload ing_WP.Settings matches 0 store success score @s ing_WP.DATA_FindForceload run forceload query ~ ~
+execute as @e[tag=ing_waypoint.New,limit=1] at @s unless score Forceload ing_WP.Settings matches 0 if score @s ing_WP.DATA_FindForceload matches 0 run forceload add ~ ~ ~ ~
 
 # done
 

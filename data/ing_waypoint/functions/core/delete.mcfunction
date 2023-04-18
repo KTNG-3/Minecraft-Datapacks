@@ -7,6 +7,7 @@ scoreboard objectives remove ing_WP.Settings_Distance
 scoreboard objectives remove ing_WP.Settings_ArrowLocation
 scoreboard objectives remove ing_WP.Settings_AutoCancel
 scoreboard objectives remove ing_WP.Settings_Sound
+scoreboard objectives remove ing_WP.Settings_Invisible
 
 ## function
 
@@ -34,9 +35,12 @@ tag @e remove ing_waypoint.LoadPlayer
 tag @e remove ing_waypoint.LoadTarget
 tag @e remove ing_waypoint.Name_LoadPaper
 tag @e remove ing_waypoint.Name_LoadTarget
-execute as @e[type=#ing_waypoint:waypoint,tag=ing_waypoint.Waypoint] at @s if score @s ing_WP.DATA_FindForceload matches 0 run forceload remove ~ ~ ~ ~
-execute as @e[type=#ing_waypoint:waypoint,tag=ing_waypoint.Waypoint] run kill @s
-tag @e remove ing_waypoint.Waypoint
+tag @e remove ing_waypoint.Name_LoadThrower
+tag @e remove ing_waypoint.Private_LoadPlayer
+tag @e remove ing_waypoint.Private_LoadTarget
+
+execute as @e[type=#ing_waypoint:waypoint,tag=ing_waypoint.Waypoint] at @s run function ing_waypoint:project/waypoint_kill
+execute as @e[type=#ing_waypoint:waypoint,tag=ng_waypoint.LoadBack] at @s run function ing_waypoint:project/waypoint_kill
 
 scoreboard objectives remove ing_WP.DATA_ID
 scoreboard objectives remove ing_WP.DATA_Owner
