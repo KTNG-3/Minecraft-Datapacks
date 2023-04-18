@@ -2,24 +2,17 @@
 
 tag @s add ing_waypoint.LoadPlayer
 
-execute as @s at @s run function ing:trigger/pages/-1
-
 # script
 
-execute as @e[type=minecraft:armor_stand,tag=ing_waypoint.Waypoint] if score @s ing_WP.DATA_Owner = @a[tag=ing_waypoint.LoadPlayer,limit=1] ing_UserData.ID if score @s ing_WP.DATA_ID = @a[tag=ing_waypoint.LoadPlayer,limit=1] ing.Waypoint run tag @s add ing_waypoint.LoadTarget
+execute as @e[type=#ing_waypoint:waypoint,tag=ing_waypoint.Waypoint] if score @s ing_WP.DATA_ID = @a[tag=ing_waypoint.LoadPlayer,limit=1] ing.Waypoint run tag @s add ing_waypoint.LoadTarget
 
-execute as @a if score @s ing_WP.DATA_ID = @e[tag=ing_waypoint.LoadTarget,limit=1] ing_WP.DATA_ID run function ing_waypoint:project/script/player/command/cancel
-
-execute as @e[tag=ing_waypoint.LoadTarget,limit=1] at @s if score @s ing_WP.DATA_FindForceload matches 0 if score Forceload ing_WP.Settings matches 1 run forceload remove ~ ~ ~ ~
-
-kill @e[tag=ing_waypoint.LoadTarget,limit=1]
+execute unless entity @e[tag=ing_waypoint.LoadTarget,limit=1] run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"Not Found","color":"red","bold":true}]
+execute if entity @e[tag=ing_waypoint.LoadTarget,limit=1] unless score @e[tag=ing_waypoint.LoadTarget,limit=1] ing_WP.DATA_Owner = @a[tag=ing_waypoint.LoadPlayer,limit=1] ing_UserData.ID unless score @e[tag=ing_waypoint.LoadTarget,limit=1] ing_WP.DATA_Owner matches -1 run tellraw @a[tag=ing_waypoint.LoadPlayer,limit=1] [{"text":"[Waypoint] ","color":"dark_green"},{"text":"You don't have permission to do this","color":"red","bold":true}]
+execute if entity @e[tag=ing_waypoint.LoadTarget,limit=1] if score @e[tag=ing_waypoint.LoadTarget,limit=1] ing_WP.DATA_Owner = @a[tag=ing_waypoint.LoadPlayer,limit=1] ing_UserData.ID run function ing_waypoint:project/script/player/command/delete_confirm
+execute if entity @e[tag=ing_waypoint.LoadTarget,limit=1] if score @e[tag=ing_waypoint.LoadTarget,limit=1] ing_WP.DATA_Owner matches -1 unless entity @a[tag=ing.Admin,tag=ing_waypoint.LoadPlayer,limit=1] run tellraw @a[tag=ing_waypoint.LoadPlayer,limit=1] [{"text":"[Waypoint] ","color":"dark_green"},{"text":"You don't have permission to do this","color":"red","bold":true}]
+execute if entity @e[tag=ing_waypoint.LoadTarget,limit=1] if score @e[tag=ing_waypoint.LoadTarget,limit=1] ing_WP.DATA_Owner matches -1 if entity @a[tag=ing.Admin,tag=ing_waypoint.LoadPlayer,limit=1] run function ing_waypoint:project/script/player/command/delete_confirm
 
 # finish
 
-execute as @s at @s if score @s ing_WP.Settings_Sound matches 1 run playsound minecraft:entity.wither.break_block master @s ~ ~ ~ 1 1 1
-
 tag @s remove ing_waypoint.LoadPlayer
 tag @e remove ing_waypoint.LoadTarget
-
-execute as @s run scoreboard players set @s ing.Help 623
-execute as @s run function ing:trigger/tick

@@ -1,13 +1,11 @@
 execute as @s at @s align xz run tp @s ~0.50 ~ ~0.50
 
 # summon
-execute as @s at @s run summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:0b,CustomName:'{"text": "Waypoint"}',NoGravity:1b,Silent:1b,Invulnerable:1b,HasVisualFire:0b,Marker:1b,Invisible:1b,Tags:["ing_waypoint.New", "ing_waypoint.Waypoint"],DisabledSlots:4144959}
+execute as @s at @s run summon minecraft:text_display ~ ~0.25 ~ {CustomNameVisible:0b,CustomName:'{"text": "Waypoint"}',NoGravity:1b,Silent:1b,Invulnerable:1b,HasVisualFire:0b,Marker:1b,Invisible:1b,Tags:["ing_waypoint.New", "ing_waypoint.Waypoint"],DisabledSlots:4144959}
 
 ## location
-execute as @s run function ing_location:project/position
 execute as @e[tag=ing_waypoint.New,limit=1] at @s run function ing_location:project/position
 
-execute as @s at @s run function ing_location:project/dimension
 execute store result score @e[tag=ing_waypoint.New,limit=1] ing_Location.Dimension run scoreboard players get @s ing_Location.Dimension
 
 # ID
@@ -26,8 +24,6 @@ execute as @e[tag=ing_waypoint.New,limit=1] at @s if score @s ing_WP.DATA_FindFo
 # done
 
 tag @e[tag=ing_waypoint.New,limit=1] remove ing_waypoint.New
-
-execute as @s run function ing:trigger/pages/-100
 
 execute as @s run scoreboard players set @s ing.Help 622
 execute as @s run function ing:trigger/tick

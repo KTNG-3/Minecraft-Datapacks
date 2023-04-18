@@ -34,8 +34,8 @@ tag @e remove ing_waypoint.LoadPlayer
 tag @e remove ing_waypoint.LoadTarget
 tag @e remove ing_waypoint.Name_LoadPaper
 tag @e remove ing_waypoint.Name_LoadTarget
-execute as @e[type=minecraft:armor_stand,tag=ing_waypoint.Waypoint] at @s if score @s ing_WP.DATA_FindForceload matches 0 run forceload remove ~ ~ ~ ~
-execute as @e[type=minecraft:armor_stand,tag=ing_waypoint.Waypoint] run kill @s
+execute as @e[type=#ing_waypoint:waypoint,tag=ing_waypoint.Waypoint] at @s if score @s ing_WP.DATA_FindForceload matches 0 run forceload remove ~ ~ ~ ~
+execute as @e[type=#ing_waypoint:waypoint,tag=ing_waypoint.Waypoint] run kill @s
 tag @e remove ing_waypoint.Waypoint
 
 scoreboard objectives remove ing_WP.DATA_ID
