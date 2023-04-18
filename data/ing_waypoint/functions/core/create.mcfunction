@@ -18,6 +18,7 @@ scoreboard objectives add ing_WP.Settings_Invisible dummy
 ## function
 
 scoreboard objectives add ing.Waypoint trigger
+scoreboard objectives add ing.Waypoint.Cancel trigger
 
 # distance
 

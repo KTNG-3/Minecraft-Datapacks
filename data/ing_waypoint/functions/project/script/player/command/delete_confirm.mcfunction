@@ -8,7 +8,7 @@ execute as @s if score @s ing_WP.DATA_FindForceload matches 0 run forceload add 
 execute as @s at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,HasVisualFire:0b,Marker:1b,Invisible:1b,Tags:["ing_waypoint.LoadBack"],DisabledSlots:4144959}
 execute as @e[tag=ing_waypoint.LoadBack] at @s facing entity @a[tag=ing_waypoint.LoadPlayer,limit=1] eyes run tp @a[tag=ing_waypoint.LoadPlayer,limit=1]
 execute as @s run tp @e[tag=ing_waypoint.LoadTarget,limit=1]
-execute as @e[tag=ing_waypoint.LoadTarget,limit=1] at @s if score Forceload ing_WP.Settings matches 1 run function ing_waypoint:project/waypoint_kill
+execute as @e[tag=ing_waypoint.LoadTarget,limit=1] at @s run function ing_waypoint:project/waypoint_kill
 execute as @s run tp @e[tag=ing_waypoint.LoadBack,limit=1]
 execute as @s at @s if score @s ing_WP.DATA_FindForceload matches 0 run forceload remove ~ ~
 execute as @s run scoreboard players reset @s ing_WP.DATA_FindForceload

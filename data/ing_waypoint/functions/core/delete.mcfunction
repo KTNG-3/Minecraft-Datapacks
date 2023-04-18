@@ -12,6 +12,7 @@ scoreboard objectives remove ing_WP.Settings_Invisible
 ## function
 
 scoreboard objectives remove ing.Waypoint
+scoreboard objectives remove ing.Waypoint.Cancel
 
 # distance
 

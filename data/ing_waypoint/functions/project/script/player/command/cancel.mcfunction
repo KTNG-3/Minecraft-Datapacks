@@ -2,6 +2,7 @@ execute as @s run scoreboard players set @s ing_WP.DATA_ID 0
 
 execute as @s run trigger ing.Help set 0
 execute as @s run trigger ing.Waypoint set 0
+execute as @s run trigger ing.Waypoint.Cancel set 0
 
 execute as @s run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"Cancel Path Finding","color":"gold","bold":false}]
 

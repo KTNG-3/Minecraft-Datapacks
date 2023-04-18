@@ -21,3 +21,4 @@ execute as @a if score @s ing_Core.Trigger_Last matches 621..633 run scoreboard 
 execute as @a unless score @s ing_Core.Trigger_Last matches 621..633 run trigger ing.Waypoint set 0
 
 execute as @a at @s unless score @s ing.Waypoint matches 0 run function ing_waypoint:trigger/tick_input
+execute as @a at @s unless score @s ing.Waypoint.Cancel matches 0 run function ing_waypoint:trigger/tick_cancel

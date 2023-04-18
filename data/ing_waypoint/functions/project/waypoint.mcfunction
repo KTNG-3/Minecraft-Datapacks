@@ -4,6 +4,8 @@ tag @s add ing_waypoint.LoadPlayer
 
 # script
 
+scoreboard players enable @s ing.Waypoint.Cancel
+
 execute as @e[type=#ing_waypoint:waypoint,tag=ing_waypoint.Waypoint] if score @s ing_WP.DATA_ID = @a[tag=ing_waypoint.LoadPlayer,limit=1] ing_WP.DATA_ID run tag @s add ing_waypoint.Target
 
 execute if score @s ing_Location.Dimension = @e[tag=ing_waypoint.Target,limit=1] ing_Location.Dimension as @a[tag=ing_waypoint.LoadPlayer,limit=1] at @s run function ing_waypoint:project/waypoint_confirm
