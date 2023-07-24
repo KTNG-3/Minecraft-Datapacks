@@ -2,9 +2,6 @@
 
 - Auto Totem // Auto Items (Torch // Totem)
 
-- Two By Two (Camel / Sniffer)
-- Adventuring Time (Cherry Grove‌)
-
 # command
 
 prettier --print-width 10 --tab-width 4 --trailing-comma none --write .

@@ -7,6 +7,8 @@ execute if entity @s[advancements={ing_advancement:two_by_two/axolotl=true}] as 
 execute if entity @s[advancements={ing_advancement:two_by_two/axolotl=false}] as @s run tellraw @s [{"text":"[❌] Axolotl","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:two_by_two/bee=true}] as @s run tellraw @s [{"text":"[✓] Bee","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:two_by_two/bee=false}] as @s run tellraw @s [{"text":"[❌] Bee","color":"red","bold":true}]
+execute if entity @s[advancements={ing_advancement:two_by_two/camel=true}] as @s run tellraw @s [{"text":"[✓] Camel","color":"dark_green","bold":true}]
+execute if entity @s[advancements={ing_advancement:two_by_two/camel=false}] as @s run tellraw @s [{"text":"[❌] Camel","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:two_by_two/cat=true}] as @s run tellraw @s [{"text":"[✓] Cat","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:two_by_two/cat=false}] as @s run tellraw @s [{"text":"[❌] Cat","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:two_by_two/chicken=true}] as @s run tellraw @s [{"text":"[✓] Chicken","color":"dark_green","bold":true}]

@@ -13,6 +13,7 @@ tellraw @s [{"text" : ">> ","color":"dark_green","bold": true},{"text": "Monster
 tellraw @s [{"text" : ">> ","color":"dark_green","bold": true},{"text": "Two By Two","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5106"},"hoverEvent":{"action":"show_text","contents":[{"text":"` Two By Two ` Advancement","bold":false,"color":"gray"}]}}]
 tellraw @s [{"text" : ">> ","color":"dark_green","bold": true},{"text": "When the Squad Hops into Town","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5107"},"hoverEvent":{"action":"show_text","contents":[{"text":"` When the Squad Hops into Town ` Advancement","bold":false,"color":"gray"}]}}]
 tellraw @s [{"text" : ">> ","color":"dark_green","bold": true},{"text": "With Our Powers Combined!","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5108"},"hoverEvent":{"action":"show_text","contents":[{"text":"` With Our Powers Combined! ` Advancement","bold":false,"color":"gray"}]}}]
+tellraw @s [{"text" : ">> ","color":"dark_green","bold": true},{"text": "Smithing With Style","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5109"},"hoverEvent":{"action":"show_text","contents":[{"text":"` Smithing With Style ` Advancement","bold":false,"color":"gray"}]}}]
 
 tellraw @s {"text" : ""}
 tellraw @s [{"text" : "------------------------------------","color": "dark_aqua"}]

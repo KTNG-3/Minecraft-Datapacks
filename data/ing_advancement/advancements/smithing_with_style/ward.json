@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "eye"
+            "text": "ward"
         },
         "description": {
             "text": "Smithing a new template"
         },
         "icon": {
-            "item": "minecraft:eye_armor_trim_smithing_template"
+            "item": "minecraft:ward_armor_trim_smithing_template"
         },
         "frame": "task",
         "show_toast": false,
@@ -18,7 +18,7 @@
         "Animal": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "minecraft:eye_armor_trim_smithing_template_smithing_trim"
+                "recipe_id": "minecraft:ward_armor_trim_smithing_template_smithing_trim"
             }
         }
     },
