@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "A Balanced Diet"
+            "text": "Smithing with Style"
         },
         "description": {
-            "text": "Eat All 40 Food"
+            "text": "Apply All 8 Smithing Templates"
         },
         "icon": {
-            "item": "minecraft:apple"
+            "item": "minecraft:silence_armor_trim_smithing_template"
         },
         "frame": "challenge",
         "show_toast": false,

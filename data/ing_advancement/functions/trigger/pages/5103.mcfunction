@@ -11,6 +11,8 @@ execute if entity @s[advancements={ing_advancement:adventure_time/beach=true}] a
 execute if entity @s[advancements={ing_advancement:adventure_time/beach=false}] as @s run tellraw @s [{"text":"[❌] Beach","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/birch_forest=true}] as @s run tellraw @s [{"text":"[✓] Birch Forest","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/birch_forest=false}] as @s run tellraw @s [{"text":"[❌] Birch Forest","color":"red","bold":true}]
+execute if entity @s[advancements={ing_advancement:adventure_time/cherry_grove=true}] as @s run tellraw @s [{"text":"[✓] Cherry Grove","color":"dark_green","bold":true}]
+execute if entity @s[advancements={ing_advancement:adventure_time/cherry_grove=false}] as @s run tellraw @s [{"text":"[❌] Cherry Grove","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/cold_ocean=true}] as @s run tellraw @s [{"text":"[✓] Cold Ocean","color":"dark_green","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/cold_ocean=false}] as @s run tellraw @s [{"text":"[❌] Cold Ocean","color":"red","bold":true}]
 execute if entity @s[advancements={ing_advancement:adventure_time/dark_forest=true}] as @s run tellraw @s [{"text":"[✓] Dark Forest","color":"dark_green","bold":true}]
