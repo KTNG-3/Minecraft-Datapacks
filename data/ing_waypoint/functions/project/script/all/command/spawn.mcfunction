@@ -30,4 +30,6 @@ execute as @s[tag=ing.Admin] run scoreboard players set @s ing.Help 632
 execute as @s[tag=ing.Admin] run function ing:trigger/tick
 
 execute as @s run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"Create new global Waypoint at [ ","color":"gold","bold":false},{"score":{"name":"@s","objective":"ing_Location.Position_x"},"color":"red"},{"text":", ","color":"red"},{"score":{"name":"@s","objective":"ing_Location.Position_y"},"color":"red"},{"text":", ","color":"red"},{"score":{"name":"@s","objective":"ing_Location.Position_z"},"color":"red"},{"text":" ]","color":"gold","bold":false}]
-execute if score Forceload ing_WP.Settings matches 0 as @s run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"We are not recommended to create a Waypoint at a different dimension","color":"gold","bold":false}]
+execute if score Forceload ing_WP.Settings matches 0 unless score @s ing_Location.Dimension matches 1 as @s run tellraw @s [{"text":"[Waypoint] ","color":"dark_green"},{"text":"We are not recommended to create a Waypoint in multiple dimensions","color":"gold","bold":false}]
+
+execute as @s at @s if score @s ing_WP.Settings_Sound matches 1 run playsound minecraft:block.amethyst_block.fall master @s ~ ~ ~ 0.6 2

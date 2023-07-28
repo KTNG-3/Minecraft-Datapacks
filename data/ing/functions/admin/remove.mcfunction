@@ -1,6 +1,6 @@
 # playsound
 
-execute as @s at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.25 2 1
+execute as @s at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.15 2
 
 # script
 

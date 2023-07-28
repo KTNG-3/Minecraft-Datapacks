@@ -16,7 +16,7 @@ kill @e[tag=ing_waypoint.LoadBack,limit=1]
 
 # finish
 
-execute as @s at @s if score @s ing_WP.Settings_Sound matches 1 run playsound minecraft:entity.wither.break_block master @s ~ ~ ~ 0.4 1 1
+execute as @s at @s if score @s ing_WP.Settings_Sound matches 1 run playsound minecraft:block.scaffolding.step master @s ~ ~ ~ 0.8 0.1
 
 execute as @s store result score @s ing.Help run scoreboard players get @s ing_Core.Trigger_Last
 function ing_waypoint:trigger/tick
