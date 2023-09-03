@@ -1,7 +1,6 @@
 execute as @s if score @s ing.Help matches 6 run function ing_waypoint:trigger/pages/6
 
 execute as @s if score Player_Enable ing_WP.Settings matches 1 if score @s ing.Help matches 621 run function ing_waypoint:trigger/pages/621
-execute as @s if score Player_Enable ing_WP.Settings matches 1 if score @s ing.Help matches 6210 run function ing_waypoint:trigger/pages/6210
 execute as @s if score Player_Enable ing_WP.Settings matches 1 if score @s ing.Help matches 622 run function ing_waypoint:trigger/pages/622
 execute as @s if score Player_Enable ing_WP.Settings matches 1 if score @s ing.Help matches 6220 run function ing_waypoint:trigger/pages/6220
 execute as @s if score Player_Enable ing_WP.Settings matches 1 if score @s ing.Help matches 623 run function ing_waypoint:trigger/pages/623

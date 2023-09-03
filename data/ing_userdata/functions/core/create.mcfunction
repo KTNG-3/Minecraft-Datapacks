@@ -2,8 +2,6 @@ scoreboard players set ing_UserData ing_Core.Load 1
 
 ## function
 
-scoreboard objectives add ing_UserData.ID dummy
-
 scoreboard objectives add ing_UserData.Death deathCount [{"text":"☠ ","bold":false,"color":"red"},{"text":"Death","bold":true,"color":"red"}]
 scoreboard objectives add ing_UserData.Health health [{"text":"❤ ","bold":false,"color":"red"},{"text":"Health","bold":true,"color":"red"}]
 scoreboard objectives add ing_UserData.Armor armor [{"text":"⛨ ","bold":false,"color":"red"},{"text":"Armor","bold":true,"color":"red"}]

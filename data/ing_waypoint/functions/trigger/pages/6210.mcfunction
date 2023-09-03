@@ -1,1 +1,0 @@
-execute as @s run function ing_waypoint:project/script/player/command/cancel

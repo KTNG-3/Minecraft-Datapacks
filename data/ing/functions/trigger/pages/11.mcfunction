@@ -4,7 +4,7 @@ tellraw @s [{"text" : "Ing Project","color": "dark_green","bold": true},{"text":
 tellraw @s {"text" : ""}
 tellraw @s [{"text" : "------------ Info ------------","color": "dark_aqua"}]
 tellraw @s {"text" : ""}
-tellraw @s [{"text" : "Version >> ","color":"green","bold": true},{"text": "alpha-3","color": "blue","clickEvent":{"action":"open_url","value":"https://github.com/KTNG-3/Minecraft-Datapacks"},"hoverEvent":{"action":"show_text","contents":[{"text":"Github\n\nClick: Open Website","bold":false,"color":"gray"}]}}]
+tellraw @s [{"text" : "Version >> ","color":"green","bold": true},{"text": "alpha-4","color": "blue","clickEvent":{"action":"open_url","value":"https://github.com/KTNG-3/Minecraft-Datapacks"},"hoverEvent":{"action":"show_text","contents":[{"text":"Github\n\nClick: Open Website","bold":false,"color":"gray"}]}}]
 tellraw @s [{"text" : "Create By >> ","color":"green","bold": true},{"text": "ING3_","color": "blue","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/ing3_/"},"hoverEvent":{"action":"show_text","contents":[{"text":"Planet Minecraft\n\nClick: Open Website","bold":false,"color":"gray"}]}}]
 tellraw @s {"text" : ""}
 tellraw @s [{"text" : "Discord >> ","color":"green","bold": true},{"text": "Ing Project","color": "blue","clickEvent":{"action":"open_url","value":"https://discord.com/invite/yZHWwrx7Ft"},"hoverEvent":{"action":"show_text","contents":[{"text":"Discord\n\nClick: Open Website","bold":false,"color":"gray"}]}}]

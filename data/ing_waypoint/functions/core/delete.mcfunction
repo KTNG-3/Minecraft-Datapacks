@@ -26,12 +26,9 @@ scoreboard objectives remove ing_WP.Distance
 
 kill @e[tag=ing_waypoint.New]
 kill @e[tag=ing_waypoint.Target]
-kill @e[tag=ing_waypoint.All_LoadTarget]
 kill @e[tag=ing_waypoint.LoadTarget]
 tag @e remove ing_waypoint.New
 tag @e remove ing_waypoint.Target
-tag @e remove ing_waypoint.All_LoadPlayer
-tag @e remove ing_waypoint.All_LoadTarget
 tag @e remove ing_waypoint.LoadPlayer
 tag @e remove ing_waypoint.LoadTarget
 tag @e remove ing_waypoint.Name_LoadPaper
@@ -48,10 +45,10 @@ scoreboard objectives remove ing_WP.DATA_Owner
 scoreboard objectives remove ing_WP.DATA_Visibility
 scoreboard objectives remove ing_WP.DATA_FindForceload
 
-scoreboard objectives remove ing_WP.LoadPlayer_Slot
-scoreboard objectives remove ing_WP.LoadPlayer_Empty
-scoreboard objectives remove ing_WP.LoadAll_Slot
-scoreboard objectives remove ing_WP.LoadAll_Empty
+scoreboard objectives remove ing_WP.Player_Slot
+scoreboard objectives remove ing_WP.Player_Empty
+scoreboard objectives remove ing_WP.All_Slot
+scoreboard objectives remove ing_WP.All_Empty
 
 
 # loop

@@ -7,8 +7,8 @@ execute as @e[tag=ing_waypoint.Name_LoadPaper] on origin run tag @s add ing_wayp
 
 # script
 
-execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if data entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner = @a[tag=ing_waypoint.Name_LoadThrower,limit=1] ing_UserData.ID run data modify entity @s CustomName set from entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item.tag.display.Name
-execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if data entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner = @a[tag=ing_waypoint.Name_LoadThrower,limit=1] ing_UserData.ID run playsound minecraft:block.anvil.use master @a[distance=..5,scores={ing_WP.Settings_Sound=1}] ~ ~ ~ 0.45 1
+execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if data entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner = @a[tag=ing_waypoint.Name_LoadThrower,limit=1] ing.UserID run data modify entity @s CustomName set from entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item.tag.display.Name
+execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if data entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner = @a[tag=ing_waypoint.Name_LoadThrower,limit=1] ing.UserID run playsound minecraft:block.anvil.use master @a[distance=..5,scores={ing_WP.Settings_Sound=1}] ~ ~ ~ 0.45 1
 
 execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if data entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner matches -1 if entity @a[tag=ing.Admin,tag=ing_waypoint.Name_LoadThrower,limit=1] run data modify entity @s CustomName set from entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item.tag.display.Name
 execute as @e[tag=ing_waypoint.Name_LoadTarget] at @s if data entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item.tag.display.Name if score @s ing_WP.DATA_Owner matches -1 if entity @a[tag=ing.Admin,tag=ing_waypoint.Name_LoadThrower,limit=1] run data modify entity @s item set from entity @e[tag=ing_waypoint.Name_LoadPaper,limit=1] Item

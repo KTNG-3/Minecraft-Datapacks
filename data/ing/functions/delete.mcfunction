@@ -13,6 +13,8 @@ scoreboard objectives remove ing_Core.Load_Temp
 
 scoreboard objectives remove ing_Core.isActive
 
+scoreboard objectives remove ing.UserID
+
 scoreboard objectives remove ing.Help
 scoreboard objectives remove ing_Core.Trigger_Last
 scoreboard objectives remove ing_Core.Trigger_LastTime

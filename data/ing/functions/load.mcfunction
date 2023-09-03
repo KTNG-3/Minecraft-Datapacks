@@ -13,6 +13,8 @@ scoreboard players add ing_Location ing_Core.Load 0
 scoreboard players add ing_Advancement ing_Core.Load 0
 scoreboard players add ing_Waypoint ing_Core.Load 0
 
+scoreboard players add #Total_Players ing.UserID 0
+
 # create
 
 execute if score ing_Core ing_Core.Load matches 1 run function ing:create

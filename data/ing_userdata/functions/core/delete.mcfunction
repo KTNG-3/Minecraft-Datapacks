@@ -1,7 +1,5 @@
 ## function
 
-scoreboard objectives remove ing_UserData.ID
-
 scoreboard objectives remove ing_UserData.Death
 scoreboard objectives remove ing_UserData.Health
 scoreboard objectives remove ing_UserData.Armor

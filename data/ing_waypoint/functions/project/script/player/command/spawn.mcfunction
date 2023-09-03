@@ -10,9 +10,9 @@ execute store result score @e[tag=ing_waypoint.New,limit=1] ing_Location.Dimensi
 
 # ID
 
-scoreboard players add #Total_Waypoint ing_WP.Settings 1
-execute as @e[tag=ing_waypoint.New,limit=1] store result score @s ing_WP.DATA_ID run scoreboard players get #Total_Waypoint ing_WP.Settings
-execute as @s store result score @e[tag=ing_waypoint.New,limit=1] ing_WP.DATA_Owner run scoreboard players get @s ing_UserData.ID
+scoreboard players add Total_Waypoint ing_WP.Settings 1
+execute as @e[tag=ing_waypoint.New,limit=1] store result score @s ing_WP.DATA_ID run scoreboard players get Total_Waypoint ing_WP.Settings
+execute as @s store result score @e[tag=ing_waypoint.New,limit=1] ing_WP.DATA_Owner run scoreboard players get @s ing.UserID
 
 execute as @e[tag=ing_waypoint.New,limit=1] run scoreboard players set @s ing_WP.DATA_Visibility 0
 

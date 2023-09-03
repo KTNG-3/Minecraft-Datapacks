@@ -11,3 +11,5 @@ execute if score ing_UserData ing_Core.isActive matches 1 run function #ing_user
 execute if score ing_Location ing_Core.isActive matches 1 run function #ing_location:tick
 execute if score ing_Advancement ing_Core.isActive matches 1 run function #ing_advancement:tick
 execute if score ing_Waypoint ing_Core.isActive matches 1 run function #ing_waypoint:tick
+
+execute as @a unless score @s ing.UserID matches 1.. run function ing:project/identifier
