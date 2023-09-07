@@ -18,6 +18,6 @@ tellraw @s [{"text" : ">> ","color":"dark_green","bold": true},{"text": "Smithin
 tellraw @s {"text" : ""}
 tellraw @s [{"text" : "------------------------------------","color": "dark_aqua"}]
 tellraw @s {"text" : ""}
-tellraw @s [{"text" : "<< ","color":"gold","bold": true},{"text": "Back To Advancements Helper Menu","color": "gold","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go Back To ` Advancements Helper ` Page","bold":false,"color":"gray"}]}}]
+tellraw @s [{"text" : "<< ","color":"gold","bold": true},{"text": "Back To Advancements Helper Menu","color": "gold","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go Back To ` Help ` Page","bold":false,"color":"gray"}]}}]
 tellraw @s {"text" : ""}
 tellraw @s {"text" : "-----------------------------------------------------","color":"gold"}

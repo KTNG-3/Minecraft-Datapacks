@@ -5,6 +5,7 @@ function #ing_math:delete
 function #ing_location:delete
 function #ing_advancement:delete
 function #ing_waypoint:delete
+function #ing_item:delete
 
 # delete
 

@@ -23,6 +23,6 @@ execute if score All_Enable ing_WP.Settings matches 1 run tellraw @s [{"text": "
 tellraw @s {"text" : ""}
 tellraw @s [{"text" : "--------------------------------","color": "dark_aqua"}]
 tellraw @s {"text" : ""}
-tellraw @s [{"text" : "<< ","color":"gold","bold": true},{"text": "Back To Waypoint Menu","color": "gold","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 6"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go Back To ` Waypoint ` Page","bold":false,"color":"gray"}]}}]
+tellraw @s [{"text" : "<< ","color":"gold","bold": true},{"text": "Back To Waypoint Menu","color": "gold","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 6"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go Back To ` Help ` Page","bold":false,"color":"gray"}]}}]
 tellraw @s {"text" : ""}
 tellraw @s {"text" : "-----------------------------------------------------","color":"gold"}

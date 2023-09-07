@@ -11,6 +11,7 @@ tellraw @s[tag=ing.Admin] [{"text" : ">> ","color":"green","bold": true},{"text"
 tellraw @s {"text" : ""}
 execute if score ing_Advancement ing_Core.isActive matches 1 run tellraw @s [{"text" : ">> ","color":"green","bold": true},{"text": "Advancements Helper","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 5"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go To ` Advancements Helper ` Page","bold":false,"color":"gray"}]}}]
 execute if score ing_Waypoint ing_Core.isActive matches 1 run tellraw @s [{"text" : ">> ","color":"green","bold": true},{"text": "Waypoint","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 6"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go To ` Waypoint ` Page","bold":false,"color":"gray"}]}}]
+execute if score ing_Item ing_Core.isActive matches 1 run tellraw @s [{"text" : ">> ","color":"green","bold": true},{"text": "Auto Items","color": "blue","clickEvent":{"action":"run_command","value":"/trigger ing.Help set 7"},"hoverEvent":{"action":"show_text","contents":[{"text":"Go To ` Auto Refill Items ` Page","bold":false,"color":"gray"}]}}]
 tellraw @s {"text" : ""}
 tellraw @s [{"text" : "----------------------------","color": "dark_aqua"}]
 tellraw @s {"text" : ""}

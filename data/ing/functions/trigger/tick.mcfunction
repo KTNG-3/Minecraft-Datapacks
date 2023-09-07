@@ -15,6 +15,7 @@ execute as @s if score @s ing.Help matches 11 run function ing:trigger/pages/11
 
 execute as @s at @s if score ing_Advancement ing_Core.isActive matches 1 run function ing_advancement:trigger/tick
 execute as @s at @s if score ing_Waypoint ing_Core.isActive matches 1 run function ing_waypoint:trigger/tick
+execute as @s at @s if score ing_Item ing_Core.isActive matches 1 run function ing_item:trigger/tick
 
 # last
 

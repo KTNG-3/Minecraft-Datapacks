@@ -12,6 +12,7 @@ scoreboard players add ing_UserData ing_Core.Load 0
 scoreboard players add ing_Location ing_Core.Load 0
 scoreboard players add ing_Advancement ing_Core.Load 0
 scoreboard players add ing_Waypoint ing_Core.Load 0
+scoreboard players add ing_Item ing_Core.Load 0
 
 scoreboard players add #Total_Players ing.UserID 0
 
@@ -24,6 +25,7 @@ execute if score ing_UserData ing_Core.Load matches 0 run function #ing_userdata
 execute if score ing_Location ing_Core.Load matches 0 run function #ing_location:create
 execute if score ing_Advancement ing_Core.Load matches 0 run function #ing_advancement:create
 execute if score ing_Waypoint ing_Core.Load matches 0 run function #ing_waypoint:create
+execute if score ing_Item ing_Core.Load matches 0 run function #ing_item:create
 
 # load temp
 
@@ -32,6 +34,7 @@ execute store result score ing_UserData ing_Core.Load_Temp run scoreboard player
 execute store result score ing_Location ing_Core.Load_Temp run scoreboard players get ing_Location ing_Core.Load
 execute store result score ing_Advancement ing_Core.Load_Temp run scoreboard players get ing_Advancement ing_Core.Load
 execute store result score ing_Waypoint ing_Core.Load_Temp run scoreboard players get ing_Waypoint ing_Core.Load
+execute store result score ing_Item ing_Core.Load_Temp run scoreboard players get ing_Item ing_Core.Load
 
 # load
 
@@ -40,6 +43,7 @@ function #ing_userdata:load
 function #ing_location:load
 function #ing_advancement:load
 function #ing_waypoint:load
+function #ing_item:load
 
 # active
 
@@ -48,12 +52,14 @@ scoreboard players set ing_UserData ing_Core.isActive 1
 scoreboard players set ing_Location ing_Core.isActive 1
 scoreboard players set ing_Advancement ing_Core.isActive 1
 scoreboard players set ing_Waypoint ing_Core.isActive 1
+scoreboard players set ing_Item ing_Core.isActive 1
 
 execute if score ing_Math ing_Core.Load = ing_Math ing_Core.Load_Temp run scoreboard players set ing_Math ing_Core.isActive 0
 execute if score ing_UserData ing_Core.Load = ing_UserData ing_Core.Load_Temp run scoreboard players set ing_UserData ing_Core.isActive 0
 execute if score ing_Location ing_Core.Load = ing_Location ing_Core.Load_Temp run scoreboard players set ing_Location ing_Core.isActive 0
 execute if score ing_Advancement ing_Core.Load = ing_Advancement ing_Core.Load_Temp run scoreboard players set ing_Advancement ing_Core.isActive 0
 execute if score ing_Waypoint ing_Core.Load = ing_Waypoint ing_Core.Load_Temp run scoreboard players set ing_Waypoint ing_Core.isActive 0
+execute if score ing_Item ing_Core.Load = ing_Item ing_Core.Load_Temp run scoreboard players set ing_Item ing_Core.isActive 0
 
 # message
 
