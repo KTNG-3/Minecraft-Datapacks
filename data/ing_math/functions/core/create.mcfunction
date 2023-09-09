@@ -7,12 +7,12 @@ scoreboard objectives add ing_Math.Sqrt_Out dummy
 scoreboard objectives add ing_Math.Sqrt_Temp dummy
 scoreboard objectives add ing_Math.Sqrt_In dummy
 
-scoreboard objectives add ing_Math.PTG_A dummy
-scoreboard objectives add ing_Math.PTG_B dummy
-scoreboard objectives add ing_Math.PTG_C dummy
-scoreboard objectives add ing_Math.PTG_A2 dummy
-scoreboard objectives add ing_Math.PTG_B2 dummy
-scoreboard objectives add ing_Math.PTG_C2 dummy
+scoreboard objectives add ing_Math.Pythagoras_A dummy
+scoreboard objectives add ing_Math.Pythagoras_B dummy
+scoreboard objectives add ing_Math.Pythagoras_C dummy
+scoreboard objectives add ing_Math.Pythagoras_A2 dummy
+scoreboard objectives add ing_Math.Pythagoras_B2 dummy
+scoreboard objectives add ing_Math.Pythagoras_C2 dummy
 
 scoreboard objectives add ing_Math.Percent_Haven dummy
 scoreboard objectives add ing_Math.Percent_HavenX dummy

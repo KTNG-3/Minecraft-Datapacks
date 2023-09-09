@@ -5,12 +5,12 @@ scoreboard objectives remove ing_Math.Sqrt_Out
 scoreboard objectives remove ing_Math.Sqrt_Temp
 scoreboard objectives remove ing_Math.Sqrt_In
 
-scoreboard objectives remove ing_Math.PTG_A
-scoreboard objectives remove ing_Math.PTG_B
-scoreboard objectives remove ing_Math.PTG_C
-scoreboard objectives remove ing_Math.PTG_A2
-scoreboard objectives remove ing_Math.PTG_B2
-scoreboard objectives remove ing_Math.PTG_C2
+scoreboard objectives remove ing_Math.Pythagoras_A
+scoreboard objectives remove ing_Math.Pythagoras_B
+scoreboard objectives remove ing_Math.Pythagoras_C
+scoreboard objectives remove ing_Math.Pythagoras_A2
+scoreboard objectives remove ing_Math.Pythagoras_B2
+scoreboard objectives remove ing_Math.Pythagoras_C2
 
 scoreboard objectives remove ing_Math.Percent_Haven
 scoreboard objectives remove ing_Math.Percent_HavenX
